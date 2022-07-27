@@ -4,7 +4,7 @@ with open("urban.txt", encoding="UTF-8") as f:
     urban_items = [line.rstrip() for line in f]
 	
 colnames = ["word", "frequency"]
-data = pandas.read_csv("urban-vectors-frequencies.tsv", sep="\t", encoding="UTF-8", names = colnames)
+data = pandas.read_csv("urban-vectors-frequencies-nopunc.tsv", sep="\t", encoding="UTF-8", names = colnames)
 words = data.word.tolist()
 
 
